@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   react:
-    build: ./simple-frontend-test
+    build: ./simple-frontend
     restart: always
     ports:
       - "3000:80"
@@ -17,7 +17,7 @@ services:
       retries: 3
 
   spring_boot:
-    build: ./simple-backend-test
+    build: ./simple-backend
     restart: always
     ports:
       - "8888:8888"
